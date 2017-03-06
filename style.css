@@ -13803,7 +13803,30 @@ background-color: white;
 #page-menu-wrap {
     background-color: #00ABA3!important;
 }
-.post-timeline .entry {
-    border: solid 2px #b8bec2;
- 
+.boxBorder{
+	border: solid 2px #b8bec2;
+	    padding: 25px;
+	  }
+.borderBoxDateTimeline{
+	border: solid 2px #00c0b8!important;
 }
+.leftdateTimeline{
+	color: #ed145d!important;
+	float: left;
+	margin-right: 10px;
+	letter-spacing: 1px;
+}
+.rigthdateTimeline{
+	color: #ed145d!important;
+	float: right;	
+}
+.fondoTimeline{
+background: url('images/lcd/timeline_bg.jpg');
+}
+.testidirection{
+	    display: flex!important;
+    flex-direction: column!important;
+}
+.fotoEmpresa{
+	    margin-left: 40%;
+	}
