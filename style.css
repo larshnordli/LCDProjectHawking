@@ -9670,8 +9670,7 @@ body:not(.device-touch) .clients-grid li a {
 .testi-image img,
 .testi-image i {
 	display: block;
-	width: 64px;
-	height: 64px;
+	
 }
 
 .testi-image i {
@@ -9684,7 +9683,7 @@ body:not(.device-touch) .clients-grid li a {
 	text-shadow: 1px 1px 1px #FFF;
 }
 
-.testi-image img { border-radius: 50%; }
+.testi-image img {  }
 
 .testi-content {
 	position: relative;
@@ -13710,6 +13709,9 @@ background-size: cover!important;
 }
 .testi-meta{
 	color:#01c0b8;
+	    margin-left: 40%;
+	    margin-top: 25px;
+	    font-size: 16px;
 }
 .section > .testimonial .testi-meta, .section > .testimonial .testi-meta span {
     font-size: 22px;
@@ -13829,4 +13831,8 @@ background: url('images/lcd/timeline_bg.jpg');
 }
 .fotoEmpresa{
 	    margin-left: 40%;
+	    margin-bottom: 10px;
+	}
+	.textotestimonials{
+	font-size: 16px;
 	}
