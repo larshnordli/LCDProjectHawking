@@ -13646,7 +13646,7 @@ body{
 }
 .wrap-txtsize {    display: flex;
     flex-direction: row;
-    line-height: 45px;}
+    line-height: 0px;}
 .txtsize {
 	height: 45px;
   border-radius: 54px;
@@ -13799,4 +13799,11 @@ background-color: white;
 }
 .txtkey:after{
 	 content: ""; position:absolute; bottom:  93px; width:30px; height: 3px; background: #ed145d; left: 50%; margin-left: -15px;
+}
+#page-menu-wrap {
+    background-color: #00ABA3!important;
+}
+.post-timeline .entry {
+    border: solid 2px #b8bec2;
+ 
 }
