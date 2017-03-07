@@ -2239,7 +2239,7 @@ body.top-search-open #top-account { opacity: 0; }
 	margin: 8px 4px;
 	padding: 0 14px;
 	color: #FFF;
-	font-size: 14px;
+	font-size: 15px;
 	border-radius: 14px;
 }
 
@@ -9839,7 +9839,10 @@ body:not(.device-touch) .clients-grid li a {
 
 
 .team,
-.team-image { position: relative; }
+.team-image { position: relative;
+    display: flex;
+    flex-direction: column;
+ }
 
 .team-image > a,
 .team-image img {
@@ -9875,7 +9878,8 @@ body:not(.device-touch) .clients-grid li a {
 	font-size: 19px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 700;
+	color: #ed145d;
+	font-family:CorpidE1sBold; 
 }
 
 .team-title span {
@@ -9945,17 +9949,18 @@ body:not(.device-touch) .team-overlay {
 
 .team.team-list .team-image {
 	float: left;
-	width: 250px;
+	width: 170px;
 	margin-right: 30px;
 }
 
 .team.team-list .team-desc {
 	position: relative;
 	overflow: hidden;
-	text-align: left;
+	text-align: center;
 }
 
-.team.team-list .team-title { padding-top: 0; }
+.team.team-list .team-title { padding-top: 0;    float: left;
+    margin: 24px; }
 
 .team .team-desc > .social-icon { margin-top: 20px; }
 
@@ -13627,6 +13632,7 @@ padding-top: 15%!important;
 .diapositiva h3{
 	color:#fff;
 	    font-family: CorpidE1sBold;
+	    font-size: 30px;
 }
 body{
 	width: 100%;
@@ -13645,12 +13651,14 @@ body{
 }
 .wrap-txtsize {    display: flex;
     flex-direction: row;
-    line-height: 0px;}
+    line-height: 0px;
+    border-right:  2px #d9dcdf;}
 .txtsize {
-	height: 45px;
+	height: 37px;
   border-radius: 54px;
   background-color: #f3f7fb;
   border: solid 2px #616b74; margin-right: 20px;
+      margin-top: 4px;
 }
 #incfont:hover{
 	 background-color: #dde4e8;
@@ -13676,13 +13684,13 @@ body{
     color: #616b74;
     line-height: 45px;}
 .txtsize button  { display: inline; border: none; background:none; color:#333; width: 50%; text-align: center; line-height: 45px; font-size: 18px; font-weight:bold;    padding: 0 10px;
-    line-height: 43px;}
+    line-height: 34px;}
 button#incfont { border-right: 2px solid #616b74; }
 #top-search {    display: flex;
     flex-direction: row;
     line-height: 45px;    margin: 0;
     padding: 28px 0;}
-.voice-switch  { border: 2px solid #0080c9;border-radius: 27.5px; height: 45px; text-transform:uppercase; font-weight: bold; line-height: 45px; padding:0px 20px 0 50px; box-sizing: border-box;}
+.voice-switch  { border: 3px solid #0080c9;border-radius: 27.5px; height: 45px; text-transform:uppercase; font-weight: bold; line-height: 45px; padding:0px 20px 0 50px; box-sizing: border-box;}
 .voice-switch.encendido	{ background: url(images/lcd/combined-shape@3x.png) 15px 10px no-repeat; background-size: 25px;background-color: #1381c6;color: white}
 .voice-switch.apagado	{ background: url(images/lcd/combined-shape@3x-OFF.png) 15px 10px no-repeat; background-size: 25px;background-color: white;color:#0080c9; }
 .switch-text	{}
@@ -13692,7 +13700,7 @@ button#incfont { border-right: 2px solid #616b74; }
 #page-menu nav ul { display: table; width: 100%;}
 #page-menu nav ul li { display: table-cell;}
 
-.texto-sup { position:relative; padding-bottom: 20px;font-family: CorpidE1sRegular;font-size: 18px;}
+.texto-sup { position:relative; padding-bottom: 20px;font-family: CorpidE1sRegular;font-size: 18px!important;}
 .texto-sup:after { content: ""; position:absolute; bottom: 0; width:30px; height: 3px; background: #ed145d; left: 50%; margin-left: -15px;}
 .heading-block.center > span, .heading-block.title-center > span, .center .heading-block > span {
     max-width: 1000px;
@@ -13711,7 +13719,7 @@ background-size: cover!important;
 	color:#01c0b8;
 	    margin-left: 40%;
 	    margin-top: 25px;
-	    font-size: 16px;
+	    font-size: 20px;
 }
 .section > .testimonial .testi-meta, .section > .testimonial .testi-meta span {
     font-size: 22px;
@@ -13767,6 +13775,11 @@ font-size: 18px;
 color: #ed145d;
 background-color: white;
 }
+.btnChallenge:hover{
+	background-color: #ed145d;
+  border: solid 3px #ed145d;
+  color:white;
+}
 .textoChallenge{
 	font-family: CorpidE1sRegular;
   font-size: 16px;
@@ -13779,14 +13792,14 @@ background-color: white;
 }
 .t500{
 	font-family: CorpidE1sRegular;
- font-size: 18px;
+ font-size: 26px!important;
  font-weight: bold;
  font-style: normal;
  font-stretch: normal;
  line-height: 1.44;
  letter-spacing: normal;
  text-align: center;
- color: #56585c!important;
+ color: #white!important;
 }
 .txtkey{
 	font-family: "CorpidE1sRegular";
@@ -13836,3 +13849,32 @@ background: url('images/lcd/timeline_bg.jpg');
 	.textotestimonials{
 	font-size: 16px;
 	}
+	.dark .testimonial {
+    background-color: transparent!important;
+}
+
+.lineaBordeRosa:after{
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    margin-left:48%;
+    border-top: solid 3px #ed145d!important;
+}
+.verde{
+	color: #17b5a9!important;
+}
+.abajo{
+	    margin-left: 10%;
+}
+.textoTeam{
+	margin-bottom: 60px;
+	font-size: 16px;
+	    text-align: center;
+	    margin-top: 30px;
+}
+.gris{
+color: #a6a6a6!important;
+font-family: "CorpidE1sRegular"!important; 
+font-size: 16px!important;
+}
