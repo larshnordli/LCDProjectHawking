@@ -9669,7 +9669,7 @@ body:not(.device-touch) .clients-grid li a {
 .testi-image img,
 .testi-image i {
 	display: block;
-	
+
 }
 
 .testi-image i {
@@ -9878,7 +9878,7 @@ body:not(.device-touch) .clients-grid li a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #ed145d;
-	font-family:CorpidE1sBold; 
+	font-family:CorpidE1sBold;
 }
 
 .team-title span {
@@ -13832,7 +13832,7 @@ background-color: white;
 }
 .rigthdateTimeline{
 	color: #ed145d!important;
-	float: right;	
+	float: right;
 }
 .fondoTimeline{
 background: url('images/lcd/timeline_bg.jpg');
@@ -13870,15 +13870,16 @@ background: url('images/lcd/timeline_bg.jpg');
 	margin-bottom: 60px;
 	font-size: 16px;
 	    text-align: center;
+			color: #141417;
 	    margin-top: 30px;
 }
 .gris{
 color: #a6a6a6!important;
-font-family: "CorpidE1sRegular"!important; 
+font-family: "CorpidE1sRegular"!important;
 font-size: 16px!important;
 }
 .imageKeyNumber{
-	
+
 }
 .wrapContentKey{
 	position: absolute;
