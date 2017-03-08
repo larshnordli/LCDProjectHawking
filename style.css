@@ -11165,7 +11165,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	margin-bottom: 0;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	color: #333;
 }
 
