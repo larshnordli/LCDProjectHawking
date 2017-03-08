@@ -11170,7 +11170,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	margin-bottom: 0;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	color: #333;
 }
 
@@ -11990,7 +11990,8 @@ button.toast-close-button {
 .footer-widgets-wrap .col_five_sixth { margin-bottom: 0; }
 
 #copyrights {
-	padding: 40px 0;
+	height:120px;
+	padding: 30px 0;
 	background-color: #DDD;
 	font-size: 14px;
 	line-height: 1.8;
@@ -13727,7 +13728,7 @@ button#decfont{border-right: 2px solid #616b74;}
 .heading-block.center > span, .heading-block.title-center > span, .center .heading-block > span {
     max-width: 1000px;
 		color: white;
-		margin-top: 40px;
+		margin-top: 20px;
 }
 .mvpFondo {
   background: url('./images/lcd/mvp_img.jpg');
@@ -13761,6 +13762,7 @@ background-size: cover!important;
   line-height: normal;
   letter-spacing: 1px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .pink{
 	color:#f31b66;
@@ -13776,6 +13778,10 @@ background-size: cover!important;
   text-align: center;
   color: #bababa;
 }
+.textFooter2:hover {
+    color: #e7e8e8 !important;
+}
+
 body, a, p, h1, h2, h3, div{
 	font-family: CorpidE1sRegular!important;
 }
