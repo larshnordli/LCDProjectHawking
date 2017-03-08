@@ -15,17 +15,13 @@
 	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
 	<link rel="stylesheet" href="css/intro-fonts.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.php?color=3EA98D" type="text/css" />
-
 	<!-- Document Title
 	============================================= -->
 	<title>Project Hawking</title>
-
 <style>
 .iportfolio .portfolio-image { overflow: visible; }
 
@@ -175,9 +171,9 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="intro.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/lcd/logo.png" alt="Canvas Logo"></a>
-						<a href="intro.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/lcd/logo@2x.png" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
+						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/lcd/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/lcd/logo@2x.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end --> 
 
 					<!-- Primary Navigation
 					============================================= -->
@@ -611,7 +607,7 @@ As a Cloud Studio team our goal is speed and innovation, which we accomplish by 
 									<img src="images/lcd/jonny.mauland.png" alt="Jonni">
 								</div>
 								<div class="team-desc">
-									<div class="team-title"><h4>JONNI</h4><span class="gris">Cloud Studio Lead</span></div>
+									<div class="team-title"><h4>JONNY</h4><span class="gris">Cloud Studio Lead</span></div>
 								</div>
 							</div>
 
@@ -722,166 +718,7 @@ jQuery(window).load(function(){
 	        });
 		});
 	</script>
-	<script>
-	var escucharVoz=false;
-	var section1=false;
-	var section2=false;
-	var section3=false;
-	var section4=false;
-	var section5=false;
-	var section6=false;
-	var section7=false;
-	var section8=false;
-	var section9=false;
-	 var audio = new Audio('transcription/transcript.ogg');
-	 var audio1 = new Audio('transcription/transcriptES.ogg');
-	  var audio2 = new Audio('transcription/transcript.ogg');
-		var audio3 = new Audio('transcription/transcriptES.ogg');
-		var audio4 = new Audio('transcription/transcript.ogg');
-		var audio5 = new Audio('transcription/transcriptES.ogg');
-		var audio6 = new Audio('transcription/transcript.ogg');
-		var audio7 = new Audio('transcription/transcriptES.ogg');
-		var audio8 = new Audio('transcription/transcript.ogg');
-			var audio9 = new Audio('transcription/transcriptES.ogg');
-			var btnSound=document.getElementById('activateSound');
-			var soundActivated=false;
-			btnSound.addEventListener('click',function(){
 
-				if(document.getElementById('switch-text')){
-					if(!soundActivated){
-					btnSound.classList.remove("apagado");
-						btnSound.className += " encendido";
-						document.getElementById('switch-text').innerHTML='ON'
-					}else{
-						btnSound.classList.remove("encendido");
-							btnSound.className += " apagado";
-						document.getElementById('switch-text').innerHTML='OFF'
-					}
-
-				}
-soundActivated=!soundActivated;
-
-			});
-	$(window).scroll(function() {
-		if(soundActivated){
-		if(!section1){
-			 var hT = $('#section-home').offset().top,
-					 hH = $('#section-home').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-          audio.play();
-				 console.log("seccion home pasada")
-				 section1=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section2){
-			 var hT = $('#section-challenge').offset().top,
-					 hH = $('#section-challenge').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-					 console.log(typeof wS)
-					 console.log(wS);
-			 if (wS-100 > (hT+hH-wH)){
-				 audio.pause();
-					audio1.play();
-			 console.log("seccion intro pasada")
-				 section2=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section3){
-			 var hT = $('#section-mvp').offset().top,
-					 hH = $('#section-mvp').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio1.pause();
-					audio2.play();
-				 console.log("seccion mvp pasada")
-				 section3=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section4){
-			 var hT = $('#section-solution').offset().top,
-					 hH = $('#section-solution').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio2.pause();
-					audio3.play();
-				 console.log("seccion solution pasada")
-				 section4=true;
-			 }
-		}
-		if(!section5){
-			 var hT = $('#section-keynumbers').offset().top,
-					 hH = $('#section-keynumbers').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio3.pause();
-					audio4.play();
-				 console.log("seccion keynumbers pasada")
-				 section5=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section6){
-			 var hT = $('#section-timeline').offset().top,
-					 hH = $('#section-timeline').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio4.pause();
-					audio5.play();
-				 console.log("seccion timeline pasada")
-				 section6=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section7){
-			 var hT = $('#section-testimonials').offset().top,
-					 hH = $('#section-testimonials').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio5.pause();
-					audio6.play();
-				 console.log("seccion testimonials pasada")
-				 section7=true;
-			 }
-		}
-		if(!section8){
-			 var hT = $('#section-team').offset().top,
-					 hH = $('#section-team').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio6.pause();
-					audio7.play();
-				 console.log("seccion team pasada")
-				 section8=true;
-			 }
-		}
-		if(!section9){
-			 var hT = $('#section-contact').offset().top,
-					 hH = $('#section-contact').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio7.pause();
-					audio8.play();
-				 console.log("seccion contact pasada")
-				 section9=true;
-			 }
-		}
-}else console.log("activa el sonido");
-
-	});
-	</script>
 	<script>
 	console.log('hola')
 	var mediaquery = window.matchMedia("(max-width: 600px)");
@@ -946,6 +783,165 @@ soundActivated=!soundActivated;
 
 		});
 
+	</script>
+		<script>
+	var escucharVoz=false;
+	var section1=false;
+	var section2=false;
+	var section3=false;
+	var section4=false;
+	var section5=false;
+	var section6=false;
+	var section7=false;
+	var section8=false;
+	var section9=false;
+	 var audio = new Audio('transcription/transcript.ogg');
+	 var audio1 = new Audio('transcription/transcriptES.ogg');
+	  var audio2 = new Audio('transcription/transcript.ogg');
+		var audio3 = new Audio('transcription/transcriptES.ogg');
+		var audio4 = new Audio('transcription/transcript.ogg');
+		var audio5 = new Audio('transcription/transcriptES.ogg');
+		var audio6 = new Audio('transcription/transcript.ogg');
+		var audio7 = new Audio('transcription/transcriptES.ogg');
+		var audio8 = new Audio('transcription/transcript.ogg');
+			var audio9 = new Audio('transcription/transcriptES.ogg');
+			var btnSound=document.getElementById('activateSound');
+			var soundActivated=false;
+			btnSound.addEventListener('click',function(){
+
+				if(document.getElementById('switch-text')){
+					if(!soundActivated){
+					btnSound.classList.remove("apagado");
+						btnSound.className += " encendido";
+						document.getElementById('switch-text').innerHTML='ON'
+					}else{
+						btnSound.classList.remove("encendido");
+							btnSound.className += " apagado";
+						document.getElementById('switch-text').innerHTML='OFF'
+					}
+
+				}
+soundActivated=!soundActivated;
+
+			});
+	$(window).scroll(function() {
+		if(soundActivated){
+		if(!section1){
+			 var hT = $('#section-home').offset().top,
+					 hH = $('#section-home').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $('#section-home').scrollTop();
+			 if (wS > (hT+hH-wH)){
+          audio.play();
+				 section1=true;
+				 console.log(section1);
+			 }
+		}
+		if(!section2){
+			 var hT = $('#section-challenge').offset().top,
+					 hH = $('#section-challenge').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+					 console.log(typeof wS)
+					 console.log(wS);
+			 if (wS-100 > (hT+hH-wH)){
+				 audio.pause();
+					audio1.play();
+		
+				 section2=true;
+				 console.log(section1);
+			 }
+		}
+		if(!section3){
+			 var hT = $('#section-mvp').offset().top,
+					 hH = $('#section-mvp').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio1.pause();
+					audio2.play();
+				 
+				 section3=true;
+				 console.log(section1);
+			 }
+		}
+		if(!section4){
+			 var hT = $('#section-solution').offset().top,
+					 hH = $('#section-solution').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio2.pause();
+					audio3.play();
+				
+				 section4=true;
+			 }
+		}
+		if(!section5){
+			 var hT = $('#section-keynumbers').offset().top,
+					 hH = $('#section-keynumbers').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio3.pause();
+					audio4.play();
+				 
+				 section5=true;
+				 console.log(section1);
+			 }
+		}
+		if(!section6){
+			 var hT = $('#section-timeline').offset().top,
+					 hH = $('#section-timeline').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio4.pause();
+					audio5.play();
+			
+				 section6=true;
+				 console.log(section1);
+			 }
+		}
+		if(!section7){
+			 var hT = $('#section-testimonials').offset().top,
+					 hH = $('#section-testimonials').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio5.pause();
+					audio6.play();
+				
+				 section7=true;
+			 }
+		}
+		if(!section8){
+			 var hT = $('#section-team').offset().top,
+					 hH = $('#section-team').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio6.pause();
+					audio7.play();
+				
+				 section8=true;
+			 }
+		}
+		if(!section9){
+			 var hT = $('#section-contact').offset().top,
+					 hH = $('#section-contact').outerHeight(),
+					 wH = $(window).height(),
+					 wS = $(this).scrollTop();
+			 if (wS > (hT+hH-wH)){
+					audio7.pause();
+					audio8.play();
+				
+				 section9=true;
+			 }
+		}
+}
+
+	});
 	</script>
 
 </body>
