@@ -11206,7 +11206,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 .heading-block h1 + span { font-size: 24px; }
 
-.heading-block h2 + span { font-size: 22px; }
+.heading-block h2 + span { font-size: 26px; }
 
 .heading-block h3 + span,
 .heading-block h4 + span { font-size: 20px; }
@@ -13699,7 +13699,7 @@ button#incfont { border-right: 2px solid #616b74; }
 #page-menu nav ul { display: table; width: 100%;}
 #page-menu nav ul li { display: table-cell;}
 
-.texto-sup { position:relative; padding-bottom: 20px;font-family: CorpidE1sRegular;font-size: 18px!important;}
+.texto-sup { position:relative; padding-bottom: 30px;font-family: CorpidE1sRegular;font-size: 18px!important;}
 .texto-sup:after { content: ""; position:absolute; bottom: 0; width:30px; height: 3px; background: #ed145d; left: 50%; margin-left: -15px;}
 .heading-block.center > span, .heading-block.title-center > span, .center .heading-block > span {
     max-width: 1000px;
