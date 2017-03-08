@@ -13730,9 +13730,9 @@ background-size: cover!important;
 	margin: 50px 50px;
 }
 .textFooter{
-	font-family:CorpidE1sBold;
-	color:white;
-	font-size: 22px;
+  font-family:CorpidE1sBold;
+  color:white;
+  font-size: 22px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -13896,3 +13896,34 @@ font-size: 16px!important;
 	font-size: 20px;
 	color:white;
 }
+
+/* BEGIN Section Contact */
+.intro-support-block{
+	border-top: 1px solid #e0e3e6!important;
+    overflow: hidden;
+    height: 210px;    
+}
+.col-padding-contact { padding: 55px; }
+
+.intro-support-block a.col-padding-contact {
+	display: block;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.intro-support-block a.col-padding-contact:hover { background-color: #F5F5F5; }
+
+.txtcontact{
+ font-family: CorpidE1sRegular;
+ font-size: 18px!important;
+ font-weight: bold;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 1.44;
+ letter-spacing: normal;
+ text-align: center;
+ color: #56585c!important;
+}
+
+/* END Section Contact */
