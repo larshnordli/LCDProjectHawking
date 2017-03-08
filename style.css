@@ -2224,6 +2224,7 @@ body.top-search-open #top-account { opacity: 0; }
 	float: right;
 }
 
+
 #page-menu nav ul {
 	margin-bottom: 0;
 	height: 44px;
@@ -13918,4 +13919,20 @@ font-size: 16px!important;
     position: absolute;
     top: 0px;
     left: 83.2%;
+}
+.logosTecnologias{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	    justify-content: space-between;
+}
+.cajaLogos{
+	display:flex;
+	flex-direction:column;
+}
+.textSolutionLogos{
+	margin-bottom: 40px;
+	margin-top: 10px;
+	font-family: CorpidE1sBold!important;
+	font-size: 18px;
 }
