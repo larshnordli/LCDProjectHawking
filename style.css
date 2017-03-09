@@ -13941,6 +13941,37 @@ font-size: 16px!important;
 	font-family: CorpidE1sBold!important;
 	font-size: 18px;
 }
+
+/* BEGIN Section Contact */
+.intro-support-block{
+	border-top: 1px solid #e0e3e6!important;
+    overflow: hidden;
+    height: 210px;    
+}
+.col-padding-contact { padding: 55px; }
+
+.intro-support-block a.col-padding-contact {
+	display: block;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.intro-support-block a.col-padding-contact:hover { background-color: #F5F5F5; }
+
+.txtcontact{
+ font-family: CorpidE1sRegular;
+ font-size: 18px!important;
+ font-weight: bold;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 1.44;
+ letter-spacing: normal;
+ text-align: center;
+ color: #56585c!important;
+}
+
+/* END Section Contact */
 h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a, #top-search form input, .entry-link, .entry.entry-date-section span, .button.button-desc, .counter, label, .nav-tree li a, .wedding-head .first-name, .wedding-head .last-name {
     font-family: CorpidE1sBold!important;
      font-size:20px; letter-spacing: 3px; color: #131417;
