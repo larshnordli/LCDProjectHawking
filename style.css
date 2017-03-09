@@ -5147,8 +5147,7 @@ body:not(.device-touch) .entry-link {
 .post-grid .entry-image img { border-radius: 0; }
 
 .post-grid .entry-title h2 {
-	font-size: 17px;
-	font-weight: 600;
+
 }
 
 .post-grid .entry-link { font-size: 24px; }
@@ -5192,7 +5191,7 @@ body:not(.device-touch) .entry-link {
 	margin-right: 40px;
 }
 
-.post-grid.grid-2 .entry-title h2 { font-size: 20px; }
+.post-grid.grid-2 .entry-title h2 { }
 
 
 /* Blog - Grid - 2 Columns - Sidebar
@@ -5244,7 +5243,7 @@ body:not(.device-touch) .entry-link {
 	left: 50%;
 	margin-left: -71px;
 	width: 0;
-	border-left: 1px dashed #CCC;
+	border-left: 2px dashed #b8bdc1;
 	height: 100%;
 }
 
@@ -13683,7 +13682,7 @@ body{
 .wrap-txtsize span	{display: inline;
     margin-right: 10px;
      font-family: CorpidE1sHeavy!important; 
-    font-size: 17px;
+  
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
@@ -13861,7 +13860,7 @@ background-color: white;
 }
 .rigthdateTimeline{
 	color: #ed145d!important;
-	float: right;
+	
 }
 .fondoTimeline{
 background: url('images/lcd/timeline_bg.jpg');
@@ -13941,4 +13940,59 @@ font-size: 16px!important;
 	margin-top: 10px;
 	font-family: CorpidE1sBold!important;
 	font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a, #top-search form input, .entry-link, .entry.entry-date-section span, .button.button-desc, .counter, label, .nav-tree li a, .wedding-head .first-name, .wedding-head .last-name {
+    font-family: CorpidE1sBold!important;
+     font-size:20px; letter-spacing: 3px; color: #131417;
+}
+.rigthdateTimeline {
+    color: #ed145d!important;
+   
+    font-size: 25px!important;
+}
+.leftdateTimeline {
+    color: #ed145d!important;
+    float: left;
+    font-size: 25px!important;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+.titleBoxTimeline{
+	font-family: CorpidE1sBold!important;
+  font-size: 18px!important;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #131417;
+}
+.post-timeline .entry-timeline div.timeline-divider {
+    position: absolute;
+    top: 4px;
+    left: -58px;
+    width: 50px;
+    height: 0;
+    border-top: 2px dashed #b8bdc1;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#content p {
+    line-height: 1.8;
+    margin-bottom: 0px!important;
+}
+
+.post-timeline .entry-timeline {position: absolute; border: 2px solid #b8bdc1;background-color: #FFF;padding-top: 0;text-indent: -9999px;top: 40px;left: auto;right: -76px;width: 14px;height: 14px;border-radius: 50%;font-size: 26px;font-weight: bold;color: #AAA;text-align: center;line-height: 1;-webkit-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
+.cajasIzqTimeline{
+	display: flex;
+    justify-content: flex-end;
+}
+.tituloBoxTimeline{
+	font-size: 17px;
+}
+.txtSixeTm{
+	font-size: 18px;
+	font-family: CorpidE1sBold!important;
+}
+.txtInP{
+	font-size: 16px!important;
+	line-height: 30px!important;
 }
