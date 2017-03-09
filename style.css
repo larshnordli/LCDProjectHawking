@@ -9851,6 +9851,8 @@ body:not(.device-touch) .clients-grid li a {
 .team-image img {
 	display: block;
 	width: 100%;
+	border: 2px solid #dfe3e5;
+    border-radius: 100%;
 }
 
 .team-desc { text-align: center; }
@@ -9878,7 +9880,7 @@ body:not(.device-touch) .clients-grid li a {
 .team-title h4 {
 	display: block;
 	margin-bottom: 0;
-	font-size: 19px;
+	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #ed145d;
@@ -13972,6 +13974,18 @@ font-size: 16px!important;
 }
 
 /* END Section Contact */
+/* BEGIN Section TEAM */
+.topmargin-lg-team { margin-top: 60px !important; }
+.textglobal{
+	margin-bottom: 60px;
+	font-size: 16px;
+	text-align: center;
+	color: #141417;
+	margin-top: 30px;
+	line-height: 30px;
+}
+
+/* END Section TEAM */
 h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a, #top-search form input, .entry-link, .entry.entry-date-section span, .button.button-desc, .counter, label, .nav-tree li a, .wedding-head .first-name, .wedding-head .last-name {
     font-family: CorpidE1sBold!important;
      font-size:20px; letter-spacing: 3px; color: #131417;
