@@ -13645,7 +13645,11 @@ padding-top: 15%!important;
 	color:#fff;
 	    font-family: CorpidE1sBold;
 	    font-size: 30px;
+<<<<<<< HEAD
 	    font-weight:500;
+=======
+	    margin-top: 20px;
+>>>>>>> refs/remotes/origin/master
 }
 body{
 	width: 100%;
