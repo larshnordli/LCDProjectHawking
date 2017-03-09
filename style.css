@@ -13645,11 +13645,11 @@ padding-top: 15%!important;
 	color:#fff;
 	    font-family: CorpidE1sBold;
 	    font-size: 30px;
-<<<<<<< HEAD
+
 	    font-weight:500;
-=======
+
 	    margin-top: 20px;
->>>>>>> refs/remotes/origin/master
+
 }
 body{
 	width: 100%;
@@ -13839,15 +13839,15 @@ background-color: white;
       line-height: 30px!important;
 }
 .t500{
-	font-family: CorpidE1sRegular;
+	font-family: CorpidE1sBold!important;
  font-size: 26px!important;
  font-weight: bold;
- font-style: normal;
+ 
  font-stretch: normal;
  line-height: 1.44;
- letter-spacing: normal;
+ letter-spacing: 3px;
  text-align: center;
- color: #white!important;
+ color: #0f1012!important; 
 }
 .txtkey{
 	font-family: "CorpidE1sRegular";
@@ -13858,7 +13858,7 @@ background-color: white;
   line-height: normal;
   letter-spacing: 3px;
   text-align: center;
-  color: #abfffb;
+  color: #0f1012;
 }
 .txtkey:after{
 	 content: ""; position:absolute; bottom:  40px; width:30px; height: 3px; background: #ed145d; left: 50%; margin-left: -15px;
@@ -13922,6 +13922,7 @@ background: url('images/lcd/timeline_bg.jpg');
 	    text-align: center;
 			color: #141417;
 	    margin-top: 30px;
+	    line-height: 30px;
 }
 .gris{
 color: #a6a6a6!important;
@@ -13934,7 +13935,7 @@ font-size: 16px!important;
 .wrapContentKey{
 	position: absolute;
     top: 27px;
-    left: 22%;
+    left: 17s%;
 }
 .textoKeyNumberIn{
 	font-size: 20px;
@@ -13956,12 +13957,14 @@ font-size: 16px!important;
 .cajaLogos{
 	display:flex;
 	flex-direction:column;
+	    width: 20%;
 }
 .textSolutionLogos{
 	margin-bottom: 40px;
 	margin-top: 10px;
 	font-family: CorpidE1sBold!important;
 	font-size: 18px;
+	letter-spacing:2px;
 }
 
 /* BEGIN Section Contact */
