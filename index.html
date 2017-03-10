@@ -521,11 +521,11 @@ The expected result is happier and more engaged users, fewer drop-outs during an
 
 				</div>
 
-						<div id="section-testimonials" class="page-section parallax nomargin notopborder dark" style="background-image: url('images/lcd/testimonials_img.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+						<div id="section-testimonials" class="page-section parallax nomargin notopborder dark" style="background-image: url('images/lcd/testimonials_img.jpg');" data-stellar-background-ratio="0.3">
 					<div class="container clearfix">
 
 						<div class="emphasis-title center">
-							<h3 style="font-size: 26px;">TESTIMONIALS</h3>
+							<h3 style="font-size: 26px;margin-top: 60px;">TESTIMONIALS</h3>
 							<a class="lineaBordeRosa"></a>
 						</div>
 
@@ -769,14 +769,14 @@ jQuery(window).load(function(){
 		 $(document).ready(function() {
 			$('#incfont').click(function( event ){
 				event.preventDefault();
-					        curSize= parseInt($('.ctexto').css('font-size')) + 2;
+					        curSize= parseInt($('.ctexto').css('font-size')) +6;
 			if(curSize<=40)
 	        $('#changeText *').css('font-size', curSize);
 	        });
 			$('#decfont').click(function( event ){
 				event.preventDefault();
 	        curSize= parseInt($('.ctexto').css('font-size')) - 2;
-			if(curSize>=12)
+			if(curSize>=14)
 	        $('#changeText *').css('font-size', curSize);
 	        });
 		});
