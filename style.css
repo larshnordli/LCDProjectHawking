@@ -97,7 +97,7 @@
 
 @font-face {
 		 font-family: CorpidE1sRegular;
-		 src: url("./fonts/CorpidE1s-Regular.otf");
+		 src: url("./fonts/CorpidE1s-Regular.ttf");
 	 }
 @font-face {
 	font-family: CorpidE1sBold;
@@ -708,6 +708,8 @@ html[xmlns] .slider-wrap {display: block;}
 	top: 14px;
 	right: 10px;
 	margin: 0;
+	    top: 497px;
+    right: 530px;
 }
 
 .flex-control-nav li {
@@ -724,7 +726,7 @@ html[xmlns] .slider-wrap {display: block;}
 	text-indent: -9999px;
 	width: 10px !important;
 	height: 10px !important;
-	border: 1px solid #FFF;
+	border: 1px solid #828791;
 	border-radius: 50%;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
@@ -732,7 +734,7 @@ html[xmlns] .slider-wrap {display: block;}
 }
 
 .flex-control-nav li:hover a,
-.flex-control-nav li a.flex-active { background-color: #FFF; }
+.flex-control-nav li a.flex-active { background-color: #828791; }
 
 
 /* ----------------------------------------------------------------
@@ -5316,7 +5318,7 @@ body:not(.device-touch) .entry-link {
 .post-timeline .alt .entry-timeline {
 	right: auto;
 	left: -77px;
-	top: 150px!important;
+	top: 140px!important;
 }
 
 .post-timeline .alt .entry-timeline div.timeline-divider {
