@@ -1004,7 +1004,7 @@ html[xmlns] .slider-wrap {display: block;}
 
 body.stretched #header.full-header .container {
 
-	
+
 }
 
 #header.transparent-header.full-header #header-wrap { border-bottom: 1px solid rgba(0,0,0,0.1); }
@@ -2174,7 +2174,7 @@ body.top-search-open #top-account { opacity: 0; }
 	position: relative;
 	height: 44px;
 	line-height: 44px;
-	
+
 }
 
 #page-menu-wrap {
@@ -11181,7 +11181,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: #333;
-	 letter-spacing: 3px;
+	 letter-spacing:ï¿½3px;
 }
 
 .emphasis-title h1,
@@ -13681,14 +13681,14 @@ body{
   border: solid 2px #616b74; margin-right: 20px;
       margin-top: 8px;
           width: 120px;
-          
+
 }
 #incfont:hover{
 	 background-color: #dde4e8;
 	 border-top-right-radius: 27px;
 	 border-bottom-right-radius: 27px;
-	
-	 
+
+
 }
 #decfont:hover{
 	background-color: #dde4e8;
@@ -13884,7 +13884,7 @@ background-color: white;
 }
 .rigthdateTimeline{
 	color: #ed145d!important;
-	
+
 }
 .fondoTimeline{
 background: url('images/lcd/timeline_bg.jpg');
@@ -14051,7 +14051,7 @@ h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .meg
     margin-bottom: 0px!important;
 }
 
-.post-timeline .entry-timeline {position: absolute; border: 2px solid #b8bdc1;background-color: #FFF;padding-top: 0;text-indent: -9999px;top: 40px;left: auto;right: -76px;width: 14px;height: 14px;border-radius: 50%;font-size: 26px;font-weight: bold;color: #AAA;text-align: center;line-height: 1;-webkit-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
+.post-timeline .entry-timelineï¿½{position:ï¿½absolute; border:ï¿½2px solidï¿½#b8bdc1;background-color:ï¿½#FFF;padding-top:ï¿½0;text-indent:ï¿½-9999px;top:ï¿½40px;left:ï¿½auto;right:ï¿½-76px;width:ï¿½14px;height:ï¿½14px;border-radius:ï¿½50%;font-size:ï¿½26px;font-weight:ï¿½bold;color:ï¿½#AAA;text-align:ï¿½center;line-height:ï¿½1;-webkit-transition:ï¿½all .3sï¿½ease-in-out;-o-transition:ï¿½all .3s ease-in-out;transition:ï¿½all .3sï¿½ease-in-out;}
 .cajasIzqTimeline{
 	display: flex;
     justify-content: flex-end;

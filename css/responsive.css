@@ -62,7 +62,7 @@
 	.testi-image img,
 	.testi-image i {
 		display: block;
-		width: 36px;
+		width: 96px;
 		height: 36px;
 	}
 
@@ -1851,4 +1851,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.standard-logo { display: none; }
 	#logo a.retina-logo { display: inline-block; }
 }
-
