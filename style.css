@@ -9666,9 +9666,7 @@ body:not(.device-touch) .clients-grid li a {
 	position: relative;
 	padding: 20px;
 	background-color: #FFF;
-	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 5px;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 .testi-image {
@@ -11182,7 +11180,6 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: #333;
-	 letter-spacing:�3px;
 }
 
 .emphasis-title h1,
@@ -13882,6 +13879,7 @@ background-color: white;
 	float: left;
 	margin-right: 10px;
 	letter-spacing: 1px;
+	font-weight: 300;
 }
 .rigthdateTimeline{
 	color: #ed145d!important;
@@ -13996,6 +13994,24 @@ font-size: 16px!important;
 	font-size: 18px;
 	color: #01b3ac;
 }
+.greentitle{
+	font-family: CorpidE1sBold!important;
+ 	font-size: 26px!important;
+ 	font-stretch: normal;
+ 	line-height: 1.44;
+ 	letter-spacing: 3px;
+ 	text-align: center;
+ 	color: #17b5a9!important;
+}
+.whitetitle{
+	font-family: CorpidE1sBold!important;
+ 	font-size: 26px!important;
+ 	font-stretch: normal;
+ 	line-height: 1.44;
+ 	letter-spacing: 3px!important;
+ 	text-align: center;
+ 	color: #EEE!important;
+}
 
 /* BEGIN Section Contact */
 .intro-support-block{
@@ -14045,8 +14061,8 @@ h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .meg
 }
 .rigthdateTimeline {
     color: #ed145d!important;
-
     font-size: 25px!important;
+    font-weight: 300;
 }
 .leftdateTimeline {
     color: #ed145d!important;
@@ -14078,7 +14094,7 @@ h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .meg
     margin-bottom: 0px!important;
 }
 
-.post-timeline .entry-timeline�{position:�absolute; border:�2px solid�#b8bdc1;background-color:�#FFF;padding-top:�0;text-indent:�-9999px;top:�40px;left:�auto;right:�-76px;width:�14px;height:�14px;border-radius:�50%;font-size:�26px;font-weight:�bold;color:�#AAA;text-align:�center;line-height:�1;-webkit-transition:�all .3s�ease-in-out;-o-transition:�all .3s ease-in-out;transition:�all .3s�ease-in-out;}
+.post-timeline .entry-timeline:{position:absolute; border:2px solid:#b8bdc1;background-color::#FFF;padding-top::0;text-indent::-9999px;top::40px;left::auto;right::-76px;width::14px;height::14px;border-radius::50%;font-size::26px;font-weight::bold;color::#AAA;text-align::center;line-height::1;-webkit-transition::all .3s:ease-in-out;-o-transition::all .3s ease-in-out;transition::all .3s:ease-in-out;}
 .cajasIzqTimeline{
 	display: flex;
     justify-content: flex-end;
@@ -14089,6 +14105,8 @@ h1, h2, h3, h4, h5, h6, #logo, #primary-menu ul li > a, #primary-menu ul li .meg
 .txtSixeTm{
 	font-size: 18px;
 	font-family: CorpidE1sBold!important;
+	letter-spacing: 1px;
+	color: #121417!important;
 }
 .txtInP{
 	font-size: 16px!important;
