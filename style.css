@@ -5023,7 +5023,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	overflow: hidden;
 }
 
-#posts .entry-content { margin-top: 30px; }
+#posts .entry-content { margin-top: 10px; }
 
 .single-post .entry-content .entry-image { max-width: 350px; }
 
@@ -5262,7 +5262,7 @@ body:not(.device-touch) .entry-link {
 
 .entry.entry-date-section {
 	width: 100% !important;
-	margin: 50px -70px 80px;
+	margin: 0 -70px 40px;
 	padding: 0;
 	border: 0;
 	text-align: center;
@@ -13950,7 +13950,7 @@ font-size: 16px!important;
 }
 
 .contentgeneralkeyresult{
-	height:305px!important; 
+	height:305px!important;
 	color:#01b3ac;
 	font-size:102px;
 	/* padding-left: 0;
