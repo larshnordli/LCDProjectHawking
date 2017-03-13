@@ -5284,7 +5284,7 @@ body:not(.device-touch) .entry-link {
 .post-timeline .entry-timeline {
 	display: none;
 	position: absolute;
-	border: 2px solid #CCC;
+	border: 2px solid #b8bdc1;
 	background-color: #FFF;
 	padding-top: 0;
 	text-indent: -9999px;
@@ -5336,8 +5336,8 @@ body:not(.device-touch) .entry-link {
 
 .post-timeline .entry:hover .entry-timeline,
 .post-timeline .entry:hover .timeline-divider {
-	border-color: #1ABC9C;
-	color: #1ABC9C;
+	/* border-color: #1ABC9C;
+	color: #1ABC9C; */
 }
 
 
