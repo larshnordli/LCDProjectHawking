@@ -13898,7 +13898,7 @@ background: url('images/lcd/timeline_bg.jpg');
 	    margin-bottom: 10px;
 	}
 	.textotestimonials{
-	font-size: 16px;
+	font-size: 16px!important;
 	font-family: CorpidE1sItalic!important;
 	}
 	.dark .testimonial {
@@ -13915,6 +13915,7 @@ background: url('images/lcd/timeline_bg.jpg');
 }
 .verde{
 	color: #17b5a9!important;
+	font-family: CorpidE1sItalic!important;
 }
 .abajo{
 	    margin-left: 10%;

@@ -254,11 +254,7 @@
 					</div>
 				</div><!-- #page-menu end -->
 				<div id="changeText">
-				<div class="container  clearfix">
-
-
-
-				</div>
+				
 				<div id="section-challenge" class="page-section">
 					<div class="row common-height clearfix">
 
@@ -561,7 +557,7 @@ The expected result is happier and more engaged users, fewer drop-outs during an
 											HEIDI STRAWSON
 
 										</div>
-										<span style=" font-family: CorpidE1s;font-size: 16px;text-align: center;color: #a6a6a6;">Global Giving Lead, Accenture Corporate Citizenship</span>
+										<span style=" font-family: CorpidE1sRegular;font-size: 16px;text-align: center;color: #a6a6a6;">Global Giving Lead, Accenture Corporate Citizenship</span>
 									</div>
 								</div>
 							</div>
@@ -858,22 +854,22 @@ jQuery(window).load(function(){
 	var section7=false;
 	var section8=false;
 	var section9=false;
-	 var audio = new Audio('transcription/transcript.ogg');
-	 var audio1 = new Audio('transcription/transcriptES.ogg');
-	  var audio2 = new Audio('transcription/transcript.ogg');
-		var audio3 = new Audio('transcription/transcriptES.ogg');
-		var audio4 = new Audio('transcription/transcript.ogg');
-		var audio5 = new Audio('transcription/transcriptES.ogg');
-		var audio6 = new Audio('transcription/transcript.ogg');
-		var audio7 = new Audio('transcription/transcriptES.ogg');
-		var audio8 = new Audio('transcription/transcript.ogg');
-			var audio9 = new Audio('transcription/transcriptES.ogg');
+	 var audio = new Audio('transcription/TheChallenge.ogg');
+	 var audio1 = new Audio('transcription/mvp.ogg');
+	  var audio2 = new Audio('transcription/Solution.ogg');
+		var audio3 = new Audio('transcription/keyRdos.ogg');
+		var audio4 = new Audio('transcription/timeline.ogg');
+		var audio5 = new Audio('transcription/testimonials.ogg');
+		var audio6 = new Audio('transcription/team.ogg');
+		var audio7 = new Audio('transcription/Home.ogg');
+		
 			var btnSound=document.getElementById('activateSound');
 			var soundActivated=false;
 			btnSound.addEventListener('click',function(){
 
 				if(document.getElementById('switch-text')){
 					if(!soundActivated){
+						audio7.play();
 					btnSound.classList.remove("apagado");
 						btnSound.className += " encendido";
 						document.getElementById('switch-text').innerHTML='ON'
@@ -890,14 +886,15 @@ soundActivated=!soundActivated;
 	$(window).scroll(function() {
 		if(soundActivated){
 		if(!section1){
-			console.log($('#section-home'))
+			
 
 			 var hT = $('#section-home').offset().top,
 					 hH = $('#section-home').outerHeight(),
 					 wH = $(window).height(),
 					 wS = $('#section-home').scrollTop();
 			 if (wS > (hT+hH-wH)){
-          audio.play();
+				 audio7.pause();
+          			audio.play();
 				 section1=true;
 				 console.log(section1);
 			 }
