@@ -69,7 +69,13 @@
 	.testi-image i {
 		line-height: 36px;
 		font-size: 20px;
+		
 	}
+	.testi-image img { 
+	width: 100%;
+	height: auto;
+}
+	
 
 	/* ----------------------------------------------------------------
 	Portfolio

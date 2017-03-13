@@ -9674,6 +9674,7 @@ body:not(.device-touch) .clients-grid li a {
 	margin-right: 15px;
 }
 
+
 .testi-image,
 .testi-image a,
 .testi-image img,
@@ -9692,7 +9693,7 @@ body:not(.device-touch) .clients-grid li a {
 	text-shadow: 1px 1px 1px #FFF;
 }
 
-.testi-image img {  }
+
 
 .testi-content {
 	position: relative;
