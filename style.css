@@ -13864,7 +13864,7 @@ background-color: white;
   color: #0f1012;
 }
 .txtkey:after{
-	 content: ""; position:absolute; bottom:  40px; width:30px; height: 3px; background: #ed145d; left: 50%; margin-left: -15px;
+	 content: ""; position:absolute; width:30px; height: 3px; background: #ed145d; left: 50%; margin-left: -15px;
 }
 #page-menu-wrap {
     background-color: #00ABA3!important;
@@ -13943,6 +13943,8 @@ font-size: 16px!important;
 }
 .textoKeyNumberIn{
 	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 27px;
 	color:white;
 }
 .lineaDivisoria{
