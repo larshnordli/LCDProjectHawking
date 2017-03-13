@@ -13888,6 +13888,7 @@ background-color: white;
 }
 .fondoTimeline{
 background: url('images/lcd/timeline_bg.jpg');
+padding-bottom: 0;
 }
 .testidirection{
 	    display: flex!important;
@@ -14018,7 +14019,7 @@ font-size: 16px!important;
 .intro-support-block{
 	border-top: 1px solid #e0e3e6!important;
     overflow: hidden;
-    height: 210px;
+    height: 220px;
 }
 .col-padding-contact { padding: 55px; }
 
