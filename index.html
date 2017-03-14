@@ -18,6 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="css/intro-fonts.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.php?color=3EA98D" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 	<!-- Document Title
 	============================================= -->
@@ -178,8 +179,16 @@
 					<!-- Primary Navigation
 					============================================= -->
 					<nav id="primary-menu" class="mobile-menu-off-canvas dark">
-						<ul>
-							<li></li>
+						<ul class="primary-menu-list js-primary-menu-list">
+							<li><a href="#" data-href="#section-home"><div>HOME</div></a></li>
+							<li><a href="#" data-href="#section-challenge-onepage-anchor"><div>CHALLENGE</div></a></li>
+							<li><a href="#" data-href="#section-mvp"><div>MVP</div></a></li>
+							<li><a href="#" data-href="#section-solution"><div>SOLUTION</div></a></li>
+							<li><a href="#" data-href="#section-keynumbers" data-offset="103"><div>KEY RESULTS</div></a></li>
+							<li><a href="#" data-href="#section-timeline"><div>TIMELINE</div></a></li>
+							<li><a href="#" data-href="#section-testimonials" data-offset="103"><div>TESTIMONIALS</div></a></li>
+							<li><a href="#" data-href="#section-team" data-offset="103"><div>TEAM</div></a></li>
+							<li><a href="#" data-href="#section-contact" data-offset="103"><div>CONTACT</div></a></li>
 						</ul>
 
 						<!-- Top Cart
@@ -191,7 +200,11 @@
 						<div id="top-search">
 								<div class="wrap-txtsize"><span>TEXT SIZE :</span> <div class="txtsize"><button id="decfont">-&nbsp;A</button><button id="incfont">+&nbsp;A</button></div></div>
 								<div class="lineaDivisoria"></div>
-								<div id="activateSound" class="voice-switch apagado">voice <span id="switch-text">OFF</span></div>
+								<div id="activateSound" class="voice-switch apagado">
+									<span class="voice-mobile">
+										voice <span id="switch-text">OFF</span>
+									</span>	
+								</div>
 						</div><!-- #top-search end -->
 
 					</nav><!-- #primary-menu end -->
@@ -213,7 +226,10 @@
 
 
 
-						<p class="lead center divcenter texto-sup ctexto" style="max-width: 900px; font-size: 24px;">ACIT Cloud Studio & Leonard Cheshire Disability Prototype</p>
+						<p class="lead center divcenter texto-sup ctexto" style="max-width: 900px; font-size: 24px;">
+							<span class="span-mobile-block">ACIT Cloud Studio &</span>
+							<span class="span-mobile-block">Leonard Cheshire Disability Prototype</span>
+						</p>
 						<div class="emphasis-title bottommargin-lg">
 							<h3 class="ctexto">NANDINI&nbsp;-&nbsp;THE VIRTUAL REGISTRATION ASSISTANT</h3>
 						</div>
@@ -234,9 +250,9 @@
 
 
 							<nav class="one-page-menu">
-								<ul>
+								<ul class="js-page-submenu-list">
 									<li><a href="#" data-href="#section-home"><div>HOME</div></a></li>
-									<li><a href="#" data-href="#section-challenge"><div>CHALLENGE</div></a></li>
+									<li><a href="#" data-href="#section-challenge-onepage-anchor"><div>CHALLENGE</div></a></li>
 									<li><a href="#" data-href="#section-mvp"><div>MVP</div></a></li>
 									<li><a href="#" data-href="#section-solution"><div>SOLUTION</div></a></li>
 									<li><a href="#" data-href="#section-keynumbers" data-offset="103"><div>KEY RESULTS</div></a></li>
@@ -257,15 +273,15 @@
 				<div id="section-challenge" class="page-section">
 					<div class="row common-height clearfix">
 
-						<div class="col-sm-7 col-padding">
+						<div class="col-sm-7 col-padding col-padding-mobile">
 							<div class="wrapChallenge">
-								<div class="heading-block">
+								<div class="heading-block" id="section-challenge-onepage-anchor">
 									<span style="font-family: CorpidE1sRegular;font-size: 16px; font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.88;letter-spacing: normal; color: #a6a6a6!important;">All about</span>
 
 									<h3>LCD &amp; THE <a style="color:#17b5a9;">CHALLENGE</a> </h3>
 								</div>
 
-								<div class="row clearfix">
+								<div class="row clearfix challenge-text-container">
 
 									<div class="col-md-12">
 
@@ -283,7 +299,7 @@
 							</div>
 						</div>
 
-						<div class="col-sm-5 col-padding" style="background: url('images/lcd/imgchallenge.jpg') center center no-repeat; background-size: cover;"></div>
+						<div class="col-sm-5 col-padding challenge-wrapper-image" style="background: url('images/lcd/imgchallenge.jpg') center center no-repeat; background-size: cover;"></div>
 
 					</div>
 				</div>
@@ -328,6 +344,7 @@
 					</div>
 					<div class="footerSolution" style="margin-bottom: 20px;">
 					<div class="textoTeam" style="margin-bottom: 30px;">Under the hood Nandini uses the IBM Bluemix Platform along with the IBM Watson Conversation, Tone Analyzer and Text-to-Speech services.</div>
+					
 					<div class="logosTecnologias">
 					<a href="https://console.ng.bluemix.net" target="_blank" class="cajaLogos imgBluemix">
 					<img style="width: 120px;" src="images/lcd/bluemix.png" alt="Slide 3">
@@ -778,13 +795,15 @@ jQuery(window).load(function(){
 	<script>
 
 	var mediaquery = window.matchMedia("(max-width: 600px)");
+	
+	/*
 	if (mediaquery.matches) {
 		console.log('menos de 600')
 		document.getElementById('activateSound').innerHTML='';
 	} else {
 
-
 	}
+	*/
 	</script>
 
 	<script type="text/javascript">

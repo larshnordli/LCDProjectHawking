@@ -5,6 +5,160 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
+/* Mobile First */
+
+.lineaDivisoria {
+	opacity: 0;
+}
+
+.solutions-container {
+	overflow: hidden;
+}
+
+.solutions-container > .solutions-item {
+	float: left;
+	height: 50px;
+	width: 20%;
+}
+
+
+/* Only Mobile */
+@media (max-width: 376px) {
+	#logo img {
+		height: 50px;
+		margin-top: 22px;
+	}
+
+	#top-search {
+		padding: 22px 0;
+	}
+
+	.voice-mobile {
+		display: none;
+	}
+
+	.voice-switch {
+		padding: 0px 20px 0 25px;
+	}
+
+	.voice-switch.apagado,
+	.voice-switch.encendido {
+		background-position: 12px 12px;
+	}
+
+	.span-mobile-block {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#section-home .container {
+		width: 100% !important;
+	}
+
+	#section-home .lead {
+		font-size: 16px !important;
+	}
+
+	#section-home .emphasis-title .ctexto {
+		font-size: 22px;
+	}
+
+	#section-home.diapositiva {
+		padding-top: 30% !important;
+	}
+	
+	.challenge-wrapper-image {
+		height: 0 !important;
+		padding: 0 0 30px;
+		background-image: none !important;
+	}
+
+	.col-padding-mobile {
+		padding: 30px;
+	}
+
+	.wrapChallenge {
+		width: 100%;
+		padding-top: 0;
+		padding-right: : 10px;
+		padding-left: 10px;
+	}
+
+	.wrapChallenge .heading-block {
+		text-align: center;
+	}
+	.wrapChallenge .heading-block::after {
+		margin: 30px auto 0;
+	}
+
+	.challenge-text-container {
+		text-align: center;
+	}
+
+	.challenge-text-container .textoChallenge {
+		text-align: left;
+	}
+
+	#section-mvp .textMVP {
+		padding: 0 15px;
+	}
+
+	#section-solution.container {
+		width: 100% !important;
+	}
+
+}
+
+
+/* Tablet */
+@media (min-width: 377px and max-width: 992px) {
+}
+
+
+
+/* From mobile to tablet */
+@media (max-width: 992px) {
+
+	#logo {
+		display: inline-block;
+		margin-left: 35px !important;
+	}
+
+	#primary-menu {
+		float: right;
+	}
+
+	.wrap-txtsize {
+		display: none;
+	}
+
+	.voice-switch {
+		font-size: 12px;
+	}
+}
+
+
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+	.primary-menu-list {
+		display: none;
+	}
+	
+	.lineaDivisoria {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+	.lineaDivisoria {
+		left: 80%;
+	}
+}
+
 
 
 
