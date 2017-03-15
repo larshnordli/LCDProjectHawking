@@ -12,14 +12,44 @@
 }
 
 .solutions-container {
-	overflow: hidden;
 }
 
 .solutions-container > .solutions-item {
-	float: left;
-	height: 50px;
-	width: 20%;
+	width: 100%;
 }
+
+.solutions-container > .solutions-item > .solutions-item__link {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.solutions-container > .solutions-item > .solutions-item__link > .solutions-item__link-image  {
+	height: 90px;
+}
+
+.solutions-container > .solutions-item > .solutions-item__link > .solutions-item__link-text  {
+	display: block;
+	margin: 10px 0 15px;
+	font-family: CorpidE1sBold!important;
+  font-size: 18px;
+  color: #01b3ac;
+}
+
+.solutions-container > .solutions-item > .solutions-item__link > .solutions-item__link-text > .link-hover  {
+	padding-bottom: 5px;
+	border-bottom: 0 solid #43555f ;
+  transition: all .2s ease;
+		-webkit-transition: all .2s ease;
+		-moz-transition: all .2s ease; 
+		-ms-transition: all .2s ease; 
+}
+
+.solutions-container > .solutions-item > .solutions-item__link:hover > .solutions-item__link-text > .link-hover  {
+	border-bottom: 3px solid #43555f;
+
+}
+
 
 .testimonials-author {
 	margin-top: 40px;
@@ -49,6 +79,56 @@
 .testi-text-container .textotestimonials + .textotestimonials {
 	margin-top: 15px;
 }
+
+
+.team-people-list {}
+
+.team-people-list > .row-4-elm {}
+
+.team-people-list > .row-3-elm {
+	margin-bottom: 50px;
+}
+
+.team-people-item {
+	text-align: center;
+}
+
+.team-people-item__image {
+	margin: 0;
+}
+
+.team-people-item__image img {
+	border: 2px solid #dfe3e5;
+	border-radius: 50%;
+	width: 170px; 
+	margin: 0 auto;
+}
+
+.team-people-item__name {
+  color: #ed145d;
+  font-family: CorpidE1sRegular;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.37;
+  letter-spacing: normal;
+  margin: 16px 0 5px;
+}
+
+.team-people-item__role {
+	font-family: CorpidE1s;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a6a6a6;
+  margin-bottom: 16px;
+}
+
 
 /* Only Mobile */
 @media (max-width: 376px) {
@@ -135,7 +215,46 @@
 	#section-solution.container {
 		width: 100% !important;
 	}
+	
+	.team-list .team-title {
+		float: none !important;
+	}
 
+	#section-contact {
+		height: auto;
+	}
+
+	.row-4-elm + .row-3-elm, 
+	.team-people-item + .team-people-item {
+		margin-top: 30px;
+	}
+
+}
+
+@media (max-width: 479px) {
+	.fix-testi-image {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+	}
+
+	
+	.fix-testi-image .fix-testi-a {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin: 0;
+		margin-left: 0 !important;
+	}
+
+	.fix-testi-image .logo-fix-mobile {
+		width: auto;
+		height: 50px;
+		margin: 0 auto;
+	}
+	.fix-testi-image .logo-fix-mobile.small {
+		height: 35px;
+	}
 }
 
 
@@ -165,6 +284,48 @@
 	.testimonials-author .testimonials-author__info.small {
 		width: 40%;
 	}
+
+	.solutions-container {
+		overflow: hidden;
+	}
+
+	.solutions-container > .solutions-item {
+		float: left;
+		width: 50%;
+	}
+
+	.team-people-list {
+		overflow: hidden;
+	}
+
+	.team-people-list > .row-4-elm {
+		overflow: hidden;
+	}
+	
+	.team-people-list > .row-4-elm > .team-people-item {
+		width: 50%;
+		float: left;
+	}
+
+	.team-people-list > .row-3-elm {
+		overflow: hidden;
+	}
+	
+	.team-people-list > .row-3-elm > .team-people-item {
+		width: 50%;
+		float: left;
+	}
+
+	.team-people-list > .row-3-elm > .team-people-item:last-of-type {
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.solutions-container > .solutions-item {
+		width: 20%;
+	}
 }
 
 @media (min-width: 769px) {
@@ -183,7 +344,33 @@
 	.testi-text-container.font-big {
 		min-height: 380px;
 	}
+
+	.team-people-list > .row-4-elm > .team-people-item {
+		width: 25%;
+	}
+
+	.team-people-list > .row-3-elm {
+		padding: 30px 12% 20px;
+	}
+	
+	.team-people-list > .row-3-elm > .team-people-item {
+		width: 33%;
+	}
+
+	.team-people-list > .row-3-elm > .team-people-item:last-of-type {
+		width: 33%;
+	}
+
+	
+
 }
+
+@media (min-width: 377px) and (max-width: 767px) {
+	.team-people-item__image img {
+		width: 120px;
+	}
+}
+
 @media (min-width: 377px) and (max-width: 992px) {
 	.testimonials-author .testimonials-author__image {
 		padding-right: 20px;
