@@ -7,8 +7,40 @@
 
 /* Mobile First */
 
+.allow-overflow-y {
+	overflow-y: auto;
+}
+
+.testi-content .textotestimonials{
+	font-size: 16px;
+}
+
 .lineaDivisoria {
 	opacity: 0;
+}
+
+ h2.section-title,
+.heading-block h2.section-title {
+	position: relative;
+	margin: 0 0 30px;
+	font-family: CorpidE1sBold !important;
+  font-size: 26px!important;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: 3px;
+  color: #333;
+}
+
+h2.section-title.ligth,
+.heading-block h2.section-title.ligth {
+	color: #fff;
+}
+
+h2.section-title .section-title-highlight,
+.heading-block h2.section-title .section-title-highlight {
+  font-size: 26px!important;
+	color: #17b5a9;
 }
 
 .solutions-container {
@@ -280,6 +312,9 @@
 		margin-top: 30px;
 	}
 
+	#section-timeline .entry.clearfix.boxBorder {
+		border-right: solid 2px #b8bec2 !important;
+	}
 }
 
 @media (max-width: 479px) {
@@ -306,6 +341,15 @@
 	.fix-testi-image .logo-fix-mobile.small {
 		height: 35px;
 	}
+
+	.fondoTimeline {
+		background-image: none;
+	}
+
+	.fondoTimeline h2.t500 {
+		padding-left: 16px;
+		padding-right: 16px;
+	} 
 }
 
 
