@@ -1331,7 +1331,7 @@ var SEMICOLON = SEMICOLON || {};
 
 		onepageScroller: function(){
 			$onePageMenuEl.find('li').removeClass('current');
-			$onePageMenuEl.find('a[data-href="#' + SEMICOLON.header.onePageCurrentSection() + '"]').parent('li').addClass('current');
+			$onePageMenuEl.find('a[data-origin="#' + SEMICOLON.header.onePageCurrentSection() + '"]').parent('li').addClass('current');
 		},
 
 		onePageCurrentSection: function(){
