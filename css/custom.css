@@ -7,9 +7,7 @@
 
 /* Mobile First */
 
-.allow-overflow-y {
-	overflow-y: auto;
-}
+
 
 .testi-content .textotestimonials{
 	font-size: 16px;
@@ -214,7 +212,7 @@ h2.section-title .section-title-highlight,
 
 
 /* Only Mobile */
-@media (max-width: 376px) {
+@media (max-width: 426px) {
 	#logo img {
 		height: 50px;
 		margin-top: 22px;
@@ -317,7 +315,7 @@ h2.section-title .section-title-highlight,
 	}
 }
 
-@media (max-width: 479px) {
+@media (max-width: 426px) {
 	.fix-testi-image {
 		width: 100%;
 		height: auto;
@@ -353,8 +351,12 @@ h2.section-title .section-title-highlight,
 }
 
 
-/* Tablet */
-@media (min-width: 377px) {
+@media (min-width: 426px) {
+
+	.allow-overflow-y {
+		overflow-y: auto;
+	}
+
 	.testimonials-author .testimonials-author__image {
 		display: inline-block;
 		width: 20%;
@@ -460,13 +462,13 @@ h2.section-title .section-title-highlight,
 
 }
 
-@media (min-width: 377px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
 	.team-people-item__image img {
 		width: 120px;
 	}
 }
 
-@media (min-width: 377px) and (max-width: 992px) {
+@media (min-width: 426px) and (max-width: 992px) {
 	.testimonials-author .testimonials-author__image {
 		padding-right: 20px;
 		text-align: right;

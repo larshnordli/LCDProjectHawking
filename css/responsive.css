@@ -796,7 +796,8 @@
 	body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > div > ul {
 		position: fixed;
 		display: block;
-		z-index: 499;
+		/* z-index: 499; */
+		z-index: 9999; 
 		width: 280px;
 		height: 100%;
 		height: calc(100vh);
