@@ -213,6 +213,9 @@ h2.section-title .section-title-highlight,
 
 /* Only Mobile */
 @media (max-width: 426px) {
+
+	
+
 	#logo img {
 		height: 50px;
 		margin-top: 22px;
@@ -465,6 +468,12 @@ h2.section-title .section-title-highlight,
 @media (min-width: 426px) and (max-width: 767px) {
 	.team-people-item__image img {
 		width: 120px;
+	}
+}
+@media (max-width: 768px) {
+	#header,
+	#header-wrap {
+		overflow: visible;
 	}
 }
 
