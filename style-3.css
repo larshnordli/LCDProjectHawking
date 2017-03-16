@@ -5875,7 +5875,7 @@ padding-bottom: 0;
     display: block;
     margin-top: 30px;
     width: 40px;
-    margin-left:48%;
+    margin: 0 auto;
     border-top: solid 3px #ed145d!important;
 }
 .verde{

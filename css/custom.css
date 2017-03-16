@@ -7,7 +7,10 @@
 
 /* Mobile First */
 
-
+.textMVP {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 .testi-content .textotestimonials{
 	font-size: 16px;
@@ -143,7 +146,7 @@ h2.section-title .section-title-highlight,
   font-stretch: normal;
   line-height: 1.37;
   letter-spacing: normal;
-  margin: 16px 0 5px;
+  margin: 20px 0 2px;
 }
 
 .team-people-item__role {
@@ -351,6 +354,35 @@ h2.section-title .section-title-highlight,
 		padding-left: 16px;
 		padding-right: 16px;
 	} 
+
+	.challenge-text-container .textoChallenge {
+		text-align: center;
+	}
+
+	#section-mvp .textMVP {
+		font-size: 20px;
+	}
+
+	.solutions-item {
+		margin: 15px 0 30px;
+	}
+
+	#section-testimonials .testimonials-author { margin-top: 25px; }
+
+	#section-testimonials .bottommargin { margin-bottom: 30px !important; }
+
+	#section-testimonials .col-md-6.bottommargin + .col-md-6.bottommargin {
+		padding-top: 0 !important;
+	}
+
+	#section-team .textoTeam { margin-bottom: 40px; }
+	
+	#copyrights { padding: 15px 0; }
+
+	#section-testimonials .testimonial {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 
@@ -478,12 +510,46 @@ h2.section-title .section-title-highlight,
 }
 
 @media (min-width: 426px) and (max-width: 992px) {
+
+	#primary-menu-trigger, 
+	#logo {
+		margin-top: 8px !important;
+	}
+
 	.testimonials-author .testimonials-author__image {
 		padding-right: 20px;
 		text-align: right;
 	}
 	.testimonials-author .testimonials-author__image .image {
 		width: 55%;
+	}
+
+	#section-testimonials .col-md-6.bottommargin + .col-md-6.bottommargin {
+		padding-top: 0 !important;
+	}
+
+	#section-contact .col-sm-6.col-md-3.nopadding.center:nth-of-type(1),
+	#section-contact .col-sm-6.col-md-3.nopadding.center:nth-of-type(2) {
+		border-bottom: 1px solid #e0e3e6;
+	}
+
+	#section-challenge .wrapChallenge {
+		text-align: center;
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#section-challenge .wrapChallenge .heading-block:after {
+		margin: 30px auto 0;
+	}
+
+	#section-challenge .col-padding {
+		padding: 0 0 40px;
+	}
+
+	#section-challenge .challenge-wrapper-image {
+		display: none;
 	}
 }
 
@@ -506,7 +572,15 @@ h2.section-title .section-title-highlight,
 	}
 
 	.voice-switch {
-		font-size: 12px;
+		font-size: 18px;
+	}
+
+	.solutions-container > .solutions-item > .solutions-item__link > .solutions-item__link-text  {
+		font-size: 17px;
+	}
+
+	#section-contact {
+		height: auto;
 	}
 }
 
