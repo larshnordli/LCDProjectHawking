@@ -5601,7 +5601,7 @@ body:not(.no-transition) #wrapper,
 	padding:0!important
 }
 .diapositiva{
-	background: url('./images/lcd/slider.jpg')center top no-repeat!important;
+	background: url('./images/lcd-compressed/slider.jpg')center top no-repeat!important;
 background-size: cover!important;
 	color:#fff;
 	padding-bottom: 15%!important;
@@ -5714,7 +5714,7 @@ button#decfont{border-right: 2px solid #616b74;}
 		margin-top: 20px;
 }
 .mvpFondo {
-  background: url('./images/lcd/mvp_img.jpg');
+  background: url('./images/lcd-compressed/mvp_img.jpg');
 	background-position: 50% 50%;
 background-size: cover!important;
 }
@@ -5851,7 +5851,7 @@ background-color: white;
 
 }
 .fondoTimeline{
-background: url('images/lcd/timeline_bg.jpg');
+background: url('images/lcd-compressed/timeline_bg.jpg');
 padding-bottom: 0;
 }
 .testidirection{
