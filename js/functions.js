@@ -1280,8 +1280,6 @@ var SEMICOLON = SEMICOLON || {};
 
 				$onePageMenuEl.find('a[data-href]').click(function(){
 					
-					console.log('onePageMenuEl clicked!');
-
 					var element = $(this),
 						divScrollToAnchor = element.attr('data-href'),
 						divScrollSpeed = element.attr('data-speed'),
@@ -3149,8 +3147,6 @@ var SEMICOLON = SEMICOLON || {};
 		linkScroll: function(){
 			$("a[data-scrollto]").click(function(){
 
-				console.log('link clicked!');
-
 				var element = $(this),
 					divScrollToAnchor = element.attr('data-scrollto'),
 					divScrollSpeed = element.attr('data-speed'),
@@ -3182,8 +3178,6 @@ var SEMICOLON = SEMICOLON || {};
 			$('.js-primary-menu-list a[data-href]').on('click', function(event){
 
 				event.stopPropagation();
-
-				console.log('responsive menu clicked!');
 
 				var element = $(this),
 					divScrollToAnchor = element.attr('data-href'),

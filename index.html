@@ -920,14 +920,20 @@ jQuery(window).load(function(){
 	var section8=false;
 	var section9=false;
 
+	var currentAudio = undefined;
+	var currentSection = '';
+
+
+
+
 			var btnSound=document.getElementById('activateSound');
 			var soundActivated=false;
 			btnSound.addEventListener('click',function(){
 
 				if(document.getElementById('switch-text')){
 					if(!soundActivated){
-						var audio7 = new Audio('transcription/Home.ogg');
-						audio7.play();
+						currentAudio = new Audio('transcription/Home.ogg');
+						currentAudio.play();
 					btnSound.classList.remove("apagado");
 						btnSound.className += " encendido";
 						document.getElementById('switch-text').innerHTML='ON'
@@ -938,158 +944,44 @@ jQuery(window).load(function(){
 					}
 
 				}
-soundActivated=!soundActivated;
+		soundActivated=!soundActivated;
 
 			});
 	$(window).scroll(function() {
-		if(soundActivated){
-		if(!section1){
-
-
-			 var hT = $('#section-home').offset().top,
-					 hH = $('#section-home').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $('#section-home').scrollTop();
-			 if (wS > (hT+hH-wH)){
-				 audio7.pause();
-				 	var audio = new Audio('transcription/TheChallenge.ogg');
-          			audio.play();
-				 section1=true;
-				 console.log(section1);
-			 }
+		if (soundActivated) {
+			var scrollSection = SEMICOLON.header.onePageCurrentSection();
+			if (currentSection !== scrollSection) {
+				currentSection = scrollSection;
+				currentAudio.pause();
+				switch (currentSection) {
+					case 'home':
+						currentAudio = new Audio('transcription/Home.ogg');
+				 		break;
+					case 'section-challenge':
+				 		currentAudio = new Audio('transcription/TheChallenge.ogg');
+				 		break;
+					case 'section-mvp':
+	 					currentAudio = new Audio('transcription/mvp.ogg');
+				 		break;
+					case 'section-solution':
+	  				currentAudio = new Audio('transcription/Solution.ogg');
+				 		break;
+					case 'section-keynumbers':
+						currentAudio = new Audio('transcription/keyRdos.ogg');
+				 		break;
+					case 'section-timeline':
+						currentAudio = new Audio('transcription/timeline.ogg');
+				 		break;
+					case 'section-testimonials':
+						currentAudio = new Audio('transcription/testimonials.ogg');
+				 		break;
+					case 'section-team':
+						currentAudio = new Audio('transcription/team.ogg');
+				 		break;
+				}
+				currentAudio.play();
+			}
 		}
-		if(!section2){
-			 var hT = $('#section-challenge').offset().top,
-					 hH = $('#section-challenge').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-					 console.log(typeof wS)
-					 console.log(wS);
-			 if (wS-100 > (hT+hH-wH)){
-				var audio = new Audio('transcription/TheChallenge.ogg');
-
-				 audio.pause();
-	 				var audio1 = new Audio('transcription/mvp.ogg');
-
-					audio1.play();
-
-				 section2=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section3){
-			 var hT = $('#section-mvp').offset().top,
-					 hH = $('#section-mvp').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-	 				var audio1 = new Audio('transcription/mvp.ogg');
-
-					audio1.pause();
-	  			var audio2 = new Audio('transcription/Solution.ogg');
-
-					audio2.play();
-
-				 section3=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section4){
-			 var hT = $('#section-solution').offset().top,
-					 hH = $('#section-solution').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-	  		var audio2 = new Audio('transcription/Solution.ogg');
-
-					audio2.pause();
-				var audio3 = new Audio('transcription/keyRdos.ogg');
-
-					audio3.play();
-
-				 section4=true;
-			 }
-		}
-		if(!section5){
-			 var hT = $('#section-keynumbers').offset().top,
-					 hH = $('#section-keynumbers').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-		var audio3 = new Audio('transcription/keyRdos.ogg');
-
-					audio3.pause();
-		var audio4 = new Audio('transcription/timeline.ogg');
-
-					audio4.play();
-
-				 section5=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section6){
-			 var hT = $('#section-timeline').offset().top,
-					 hH = $('#section-timeline').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-		var audio4 = new Audio('transcription/timeline.ogg');
-
-					audio4.pause();
-		var audio5 = new Audio('transcription/testimonials.ogg');
-
-					audio5.play();
-
-				 section6=true;
-				 console.log(section1);
-			 }
-		}
-		if(!section7){
-			 var hT = $('#section-testimonials').offset().top,
-					 hH = $('#section-testimonials').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-					audio5.pause();
-		var audio6 = new Audio('transcription/team.ogg');
-
-					audio6.play();
-
-				 section7=true;
-			 }
-		}
-		if(!section8){
-			 var hT = $('#section-team').offset().top,
-					 hH = $('#section-team').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-		var audio6 = new Audio('transcription/team.ogg');
-
-					audio6.pause();
-		var audio7 = new Audio('transcription/Home.ogg');
-
-					audio7.play();
-
-				 section8=true;
-			 }
-		}
-		if(!section9){
-			 var hT = $('#section-contact').offset().top,
-					 hH = $('#section-contact').outerHeight(),
-					 wH = $(window).height(),
-					 wS = $(this).scrollTop();
-			 if (wS > (hT+hH-wH)){
-		var audio7 = new Audio('transcription/Home.ogg');
-
-					audio7.pause();
-					audio8.play();
-
-				 section9=true;
-			 }
-		}
-}
-
 	});
 	</script>
 
