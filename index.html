@@ -207,6 +207,8 @@
 								</div>
 						</div><!-- #top-search end -->
 
+						
+
 					</nav><!-- #primary-menu end -->
 
 				</div>
@@ -917,14 +919,6 @@ jQuery(window).load(function(){
 	var section7=false;
 	var section8=false;
 	var section9=false;
-	 var audio = new Audio('transcription/TheChallenge.ogg');
-	 var audio1 = new Audio('transcription/mvp.ogg');
-	  var audio2 = new Audio('transcription/Solution.ogg');
-		var audio3 = new Audio('transcription/keyRdos.ogg');
-		var audio4 = new Audio('transcription/timeline.ogg');
-		var audio5 = new Audio('transcription/testimonials.ogg');
-		var audio6 = new Audio('transcription/team.ogg');
-		var audio7 = new Audio('transcription/Home.ogg');
 
 			var btnSound=document.getElementById('activateSound');
 			var soundActivated=false;
@@ -932,6 +926,7 @@ jQuery(window).load(function(){
 
 				if(document.getElementById('switch-text')){
 					if(!soundActivated){
+						var audio7 = new Audio('transcription/Home.ogg');
 						audio7.play();
 					btnSound.classList.remove("apagado");
 						btnSound.className += " encendido";
@@ -957,6 +952,7 @@ soundActivated=!soundActivated;
 					 wS = $('#section-home').scrollTop();
 			 if (wS > (hT+hH-wH)){
 				 audio7.pause();
+				 	var audio = new Audio('transcription/TheChallenge.ogg');
           			audio.play();
 				 section1=true;
 				 console.log(section1);
@@ -970,7 +966,11 @@ soundActivated=!soundActivated;
 					 console.log(typeof wS)
 					 console.log(wS);
 			 if (wS-100 > (hT+hH-wH)){
+				var audio = new Audio('transcription/TheChallenge.ogg');
+
 				 audio.pause();
+	 				var audio1 = new Audio('transcription/mvp.ogg');
+
 					audio1.play();
 
 				 section2=true;
@@ -983,7 +983,11 @@ soundActivated=!soundActivated;
 					 wH = $(window).height(),
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
+	 				var audio1 = new Audio('transcription/mvp.ogg');
+
 					audio1.pause();
+	  			var audio2 = new Audio('transcription/Solution.ogg');
+
 					audio2.play();
 
 				 section3=true;
@@ -996,7 +1000,11 @@ soundActivated=!soundActivated;
 					 wH = $(window).height(),
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
+	  		var audio2 = new Audio('transcription/Solution.ogg');
+
 					audio2.pause();
+				var audio3 = new Audio('transcription/keyRdos.ogg');
+
 					audio3.play();
 
 				 section4=true;
@@ -1008,7 +1016,11 @@ soundActivated=!soundActivated;
 					 wH = $(window).height(),
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
+		var audio3 = new Audio('transcription/keyRdos.ogg');
+
 					audio3.pause();
+		var audio4 = new Audio('transcription/timeline.ogg');
+
 					audio4.play();
 
 				 section5=true;
@@ -1021,7 +1033,11 @@ soundActivated=!soundActivated;
 					 wH = $(window).height(),
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
+		var audio4 = new Audio('transcription/timeline.ogg');
+
 					audio4.pause();
+		var audio5 = new Audio('transcription/testimonials.ogg');
+
 					audio5.play();
 
 				 section6=true;
@@ -1035,6 +1051,8 @@ soundActivated=!soundActivated;
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
 					audio5.pause();
+		var audio6 = new Audio('transcription/team.ogg');
+
 					audio6.play();
 
 				 section7=true;
@@ -1046,7 +1064,11 @@ soundActivated=!soundActivated;
 					 wH = $(window).height(),
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
+		var audio6 = new Audio('transcription/team.ogg');
+
 					audio6.pause();
+		var audio7 = new Audio('transcription/Home.ogg');
+
 					audio7.play();
 
 				 section8=true;
@@ -1058,6 +1080,8 @@ soundActivated=!soundActivated;
 					 wH = $(window).height(),
 					 wS = $(this).scrollTop();
 			 if (wS > (hT+hH-wH)){
+		var audio7 = new Audio('transcription/Home.ogg');
+
 					audio7.pause();
 					audio8.play();
 
