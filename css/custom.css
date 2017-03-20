@@ -470,6 +470,9 @@ h2.section-title .section-title-highlight,
 	.solutions-container > .solutions-item {
 		width: 20%;
 	}
+	.voice-switch {
+		min-width: 165px;
+	}
 }
 
 @media (min-width: 769px) {
@@ -594,6 +597,8 @@ h2.section-title .section-title-highlight,
 	#section-contact {
 		height: auto;
 	}
+
+
 }
 
 
@@ -609,6 +614,12 @@ h2.section-title .section-title-highlight,
 	.lineaDivisoria {
 		opacity: 1;
 	}
+
+	#top-search {
+		padding: 22px 0;
+	}
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {

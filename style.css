@@ -2250,7 +2250,7 @@ body.top-search-open #top-account { opacity: 0; }
 	margin: 8px 4px;
 	padding: 0 14px;
 	color: #FFF;
-	font-size: 15px;
+	font-size: 16px;
 	border-radius: 14px;
 }
 
@@ -13678,7 +13678,7 @@ body{
   border-radius: 54px;
   background-color: #f3f7fb;
   border: solid 2px #616b74; margin-right: 20px;
-      margin-top: 8px;
+      margin-top: 6px;
           width: 120px;
 
 }
@@ -13738,7 +13738,7 @@ button#decfont{border-right: 2px solid #616b74;}
 .switch-text	{}
 
 	#header.sticky-header:not(.static-sticky) #top-search, #header.sticky-header:not(.static-sticky) #top-cart, #header.sticky-header:not(.static-sticky) #side-panel-trigger { margin: 0!important; padding: 0!important;}
-#header.sticky-header:not(.static-sticky) #top-search {     margin-top: 7px!important;}
+#header.sticky-header:not(.static-sticky) #top-search {     margin-top: 12px!important;}
 #page-menu nav ul { display: table; width: 100%;}
 #page-menu nav ul li { display: table-cell;}
 

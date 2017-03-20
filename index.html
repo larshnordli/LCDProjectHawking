@@ -932,6 +932,9 @@ jQuery(window).load(function(){
 	var soundActivated = false;
 
 	btnSound.addEventListener('click',function(){
+		if (soundActivated) {
+			currentAudio.pause();
+		}
 		if(document.getElementById('switch-text')){
 			if(!soundActivated){
 				currentAudio = new Audio('transcription/Home.ogg');
