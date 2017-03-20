@@ -20,6 +20,11 @@
 	opacity: 0;
 }
 
+.paragraph-link {
+	color: #ed145d;
+	font-weight: bold;
+}
+
  h2.section-title,
 .heading-block h2.section-title {
 	position: relative;
@@ -211,6 +216,13 @@ h2.section-title .section-title-highlight,
 	width: 30px;
 	height: 2px;
 	background-color: #ed145d;
+}
+
+#section-timeline .date-detail {
+	font-size: 12px;
+	line-height: 30px;
+	vertical-align: top;
+	text-transform: none;
 }
 
 
