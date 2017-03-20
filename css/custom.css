@@ -7,6 +7,10 @@
 
 /* Mobile First */
 
+b {
+	font-family: CorpidE1sBold;
+}
+
 .textMVP {
 	padding-left: 20px;
 	padding-right: 20px;
