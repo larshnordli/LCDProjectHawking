@@ -913,80 +913,69 @@ jQuery(window).load(function(){
 		});
 
 	</script>
-		<script>
-	var escucharVoz=false;
-	var section1=false;
-	var section2=false;
-	var section3=false;
-	var section4=false;
-	var section5=false;
-	var section6=false;
-	var section7=false;
-	var section8=false;
-	var section9=false;
+	<script>
+		var currentAudio = new Audio();
+		var currentSection = '';
+		var btnSound = $('#activateSound');
+		var switchText = $('#switch-text');
+		var soundActivated = false;
 
-	var currentAudio = undefined;
-	var currentSection = '';
-
-	var btnSound = document.getElementById('activateSound');
-	var soundActivated = false;
-
-	btnSound.addEventListener('click',function(){
-		if (soundActivated) {
-			currentAudio.pause();
-		}
-		if(document.getElementById('switch-text')){
-			if(!soundActivated){
-				currentAudio = new Audio('transcription/Home.ogg');
-				currentAudio.play();
-			btnSound.classList.remove("apagado");
-				btnSound.className += " encendido";
-				document.getElementById('switch-text').innerHTML='ON'
-			}else{
-				btnSound.classList.remove("encendido");
-					btnSound.className += " apagado";
-				document.getElementById('switch-text').innerHTML='OFF'
-			}
-		}
-		soundActivated=!soundActivated;
-	});
-
-	$(window).scroll(function() {
-		if (soundActivated) {
-			var scrollSection = SEMICOLON.header.onePageCurrentSection();
-			if (currentSection !== scrollSection) {
-				currentSection = scrollSection;
+		btnSound.on('click',function(){
+			if (soundActivated) {
 				currentAudio.pause();
-				switch (currentSection) {
-					case 'home':
-						currentAudio = new Audio('transcription/Home.ogg');
-				 		break;
-					case 'section-challenge':
-				 		currentAudio = new Audio('transcription/TheChallenge.ogg');
-				 		break;
-					case 'section-mvp':
-	 					currentAudio = new Audio('transcription/mvp.ogg');
-				 		break;
-					case 'section-solution':
-	  				currentAudio = new Audio('transcription/Solution.ogg');
-				 		break;
-					case 'section-keynumbers':
-						currentAudio = new Audio('transcription/keyRdos.ogg');
-				 		break;
-					case 'section-timeline':
-						currentAudio = new Audio('transcription/timeline.ogg');
-				 		break;
-					case 'section-testimonials':
-						currentAudio = new Audio('transcription/testimonials.ogg');
-				 		break;
-					case 'section-team':
-						currentAudio = new Audio('transcription/team.ogg');
-				 		break;
-				}
+				switchText.html('ON');
+			} else {
+				currentSection = SEMICOLON.header.onePageCurrentSection();
+				currentAudio = getCurrentAudio(currentSection);
 				currentAudio.play();
+				switchText.html('OFF');
 			}
+			btnSound.toggleClass('apagado encendido');
+			soundActivated = !soundActivated;
+		});
+
+		$(window).scroll(function() {
+			if (soundActivated) {
+				var scrollSection = SEMICOLON.header.onePageCurrentSection();
+				if (currentSection !== scrollSection) {
+					currentSection = scrollSection;
+					currentAudio.pause();
+					currentAudio = getCurrentAudio(currentSection);
+					currentAudio.play();
+				}
+			}
+		});
+
+		function getCurrentAudio(section) {
+			var newAudio = undefined;
+			switch (currentSection) {
+				case 'home':
+					newAudio = new Audio('transcription/Home.ogg');
+			 		break;
+				case 'section-challenge':
+			 		newAudio = new Audio('transcription/TheChallenge.ogg');
+			 		break;
+				case 'section-mvp':
+					newAudio = new Audio('transcription/mvp.ogg');
+			 		break;
+				case 'section-solution':
+					newAudio = new Audio('transcription/Solution.ogg');
+			 		break;
+				case 'section-keynumbers':
+					newAudio = new Audio('transcription/keyRdos.ogg');
+			 		break;
+				case 'section-timeline':
+					newAudio = new Audio('transcription/timeline.ogg');
+			 		break;
+				case 'section-testimonials':
+					newAudio = new Audio('transcription/testimonials.ogg');
+			 		break;
+				case 'section-team':
+					newAudio = new Audio('transcription/team.ogg');
+			 		break;
+			}
+			return newAudio;
 		}
-	});
 	</script>
 
 </body>
