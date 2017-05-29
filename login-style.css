@@ -1,0 +1,102 @@
+body{
+   background: #E61657;
+   font-size: 100%;
+}
+
+h1{
+   letter-spacing: 0;
+   font-size: 1.75em;
+   line-height: 1.25em;
+}
+
+h1:after{
+   content:'';
+   display: block;
+   width:1.5em;
+   height:0.2em;
+   background: #E61657;
+   margin-top: 1em;
+}
+
+label{
+   letter-spacing: 0;
+   font-size: 1em;
+   display: block;
+   text-transform: capitalize;
+   margin-bottom: 0;
+}
+
+input{
+   margin-bottom: 2.5em;
+   font-size: inherit;
+   font-family: inherit;
+   border:0.1em solid #616B74;
+   padding:0.25em;
+   border-top:none;
+   border-left:none;
+   border-right: none;
+   width: 33.33%;
+   transition: border-color 0.25s ease;
+}
+
+input:focus{
+   border-color: #00ABA3;
+}
+
+.login-form button{
+   font-family: inherit;
+   border:0.2em solid #E61657;
+   border-radius: 1.75em;
+   padding-left:1.5em !important;
+   padding-right:1.5em !important;
+   padding:0.5em;
+   font-size: 1em;
+   font-weight: 900;
+   display: block;
+   text-transform: uppercase;
+    background: white;
+    color: #E61657;
+    transition: all 0.25s ease;
+}
+
+.login-form button:hover,
+.login-form button:focus{
+   background: #E61657;
+   color: white;
+   cursor: pointer;
+}
+
+.accented{
+   color: #00ABA3;
+}
+
+.login-wrapper{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5em;
+   width:33.33%;
+   height:auto;
+   padding:2em;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   background: white;
+}
+
+.feedback{
+   padding:1.25em;
+   font-weight: 900;
+}
+
+.normal{
+   padding:0;
+}
+
+.success{
+   color:white;
+   background: #00ABA3;
+}
+
+.error{
+   color:white;
+   background: #E61657;
+}
